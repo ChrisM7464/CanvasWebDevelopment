@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+        Name: Christopher Modica
+        Date Created: December 11th, 2019
+        Most recent revision: December 13th, 2019
+-->
+<html lang="en">
+  <head>
+    <title>Contact</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Me</h1>
+    </header>
+	<nav>
+	<hr />
+	<a href="index.html">Home</a>
+	</nav>
+	<hr />
+	<section>
+	<h2>Information Request</h2>
+	<form action="request-submitted.html" method="POST">
+		<label for="firstName">First Name:</label><br />
+		<input type="text" name="fNameInput" required /><br />
+		<label for="lastName">Last Name:</label><br />
+		<input type="text" name="lNameInput" required /><br />
+		<label for="phone">Phone Number:</label><br />
+		<input type="text" name="phone" required /><br />
+		<label for="contact">Best time to call:</label><br />
+		<select id="contact" name="contact">
+			<option value="default" selected>--Select One--</option>
+			<option value="morning">Morning (8AM to 12PM Eastern)</option>
+			<option value="afternoon">Afternoon (12PM to 5PM Eastern)</option>
+			<option value="evening">Evening (5PM to 8PM Eastern)</option>
+		</select> <br />
+		<fieldset>
+		<legend>I am interested in (check all that apply):</legend><br />
+		<input type="checkbox" id="frontend" name="interest" value="frontend">
+		<label for="frontend">Front-End Web Development</label><br />
+		<input type="checkbox" id="backEnd" name="interest" value="backend">
+		<label for="backend">Back-End Web Development</label><br />
+		<input type="checkbox" id="database" name="interest" value="database">
+		<label for="database">Database Design</label><br />
+		</fieldset>
+		<fieldset>
+		<legend>I have filled in the client questionnaire form:</legend><br />
+		<input type="radio" id="choice1" name="answer" value="yes">
+		<label for="choice1">Yes</label><br />
+		<input type="radio" id="choice2" name="answer" value="no">
+		<label for="choice2">No</label><br />
+		</fieldset>
+		<label for="info">Additional information:</label><br />
+		<textarea id="info" name="info"></textarea> <br />
+		<input type="submit" /><br />
+	</form>
+	<hr />
+	</section>
+  </body>
+</html>
