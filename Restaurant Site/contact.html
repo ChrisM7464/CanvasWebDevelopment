@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+        Name: Christopher Modica
+        Date Created: December 14th, 2019
+        Most recent revision:
+-->
+<html lang="en">
+	<head>
+		<title>Contact Us</title>
+	</head>
+	<body>
+		<header>
+			<h1>
+				<center>The Low-Cal Calzone Zone</center>
+			</h1>
+		</header>
+		<nav>
+			<hr />
+			<a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="contact.html">Contact Us</a>
+			<hr />
+		</nav>
+		<section>
+			<form action="request-submitted.html" method="POST">
+				<label for="name">Name:</label>
+				<input type="text" name="nameInput" required />
+				<br />
+				<label for="lastName">Email:</label>
+				<input type="text" name="emailInput" required />
+				<br />
+				<label for="phone">Phone:</label>
+				<input type="text" name="phone" required />
+				<br />
+				<label for="inquiry">Reason for Inquiry:</label>
+				<select id="inquiry" name="inquiry">
+					<option value="catering" selected>Catering</option>
+					<option value="private">Private Party</option>
+					<option value="feedback">Feedback</option>
+					<option value="Other">Other</option>
+				</select>
+				<br />
+				<label for="info">Additional information:</label>
+				<br />
+				<textarea id="info" name="info"/>
+				<br />
+				<label for="visited-restaurant">
+		Have you been to the restaurant? </label>
+				<input type="radio" id="choice1" name="answer" value="no" checked>
+					<label for="choice1">No</label>
+					<input type="radio" id="choice2" name="answer" value="yes">
+						<label for="choice2">Yes</label>
+						<br />
+						<label for="contact">
+		Best days to contact you:</label>
+						<input type="checkbox" id="monday" name="day" value="monday">
+							<label for="monday">M</label>
+							<input type="checkbox" id="tuesday" name="day" value="tuesday">
+								<label for="tuesday">T</label>
+								<input type="checkbox" id="wednesday" name="day" value="wednesday">
+									<label for="wednesday">W</label>
+									<input type="checkbox" id="thursday" name="day" value="thursday">
+										<label for="thursday">Th</label>
+										<input type="checkbox" id="friday" name="day" value="friday">
+											<label for="friday">F</label>
+											<br>
+												<input type="submit" value="Send Request"/>
+												<br />
+											</form>
+										</section>
+										<footer>
+											<hr />
+											<address>
+												<center>
+  1533 Sugarfoot Lane, Pawnee, Indiana 47906 <br>
+  765-412-3878
+													</center>
+												</address>
+											</footer>
+										</body>
+									</html>
+									
