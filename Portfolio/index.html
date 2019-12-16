@@ -2,18 +2,44 @@
 <!--
         Name: Christopher Modica
         Date Created: December 11th, 2019
-        Most recent revision: December 13th, 2019
+        Most recent revision: December 16th, 2019
 -->
 <html lang="en">
   <head>
     <title>Christopher Modica&#39;s Portfolio</title>
+	<link href="styles/main.css" rel="stylesheet" type="text/css" />
+	<style>
+		caption {
+			font-weight: bold;
+			font-size: 1.2em;
+			margin-bottom: 8px;
+		}
+		table, th, td {
+			border: 1px solid #0d1f2d;
+			border-collapse: collapse;
+			padding: 5px 10px;
+		}
+		table {
+			width: 90%;
+			margin: auto;
+		}
+		tr {
+			height: 30px;
+		}
+		th {
+			background-color: #546a7b;
+			color: #f2eded;
+		}
+		tr:nth-child(odd) {
+			background-color: #e4c3ad;
+		}
+	</style>
   </head>
   <body>
     <header>
       <h1>Portfolio for Christopher Modica</h1>
     </header>
-    <nav>
-      <hr />
+    <nav class="border">
       <p>
         <a href="projects.html">Projects</a>
       </p>
@@ -23,10 +49,9 @@
       <p>
         <a href="contact.html">Contact</a>
       </p>
-      <hr />
     </nav>
     <section>
-      <article id="about-me">
+      <article class="border" id="about-me">
         <h2>
           <em>About Me</em>
         </h2>
@@ -45,11 +70,14 @@
         <img src="images/clock.jpg" alt="" width="250" />
         <table>
           <caption>Employment History</caption>
+		  <thead>
           <tr>
             <th>Years of Employment</th>
             <th>Title</th>
             <th>Company</th>
           </tr>
+		  </thead>
+		  <tbody>
           <tr>
             <td>2015-Present</td>
             <td>Assistant</td>
@@ -60,6 +88,7 @@
             <td>Student</td>
             <td>CSI</td>
           </tr>
+		  </tbody>
         </table>
       </article>
       <article id="hobbies">
@@ -106,7 +135,6 @@
       </article>
     </section>
     <footer>
-      <hr />
       <p>© 2019 Christopher Modica. All rights reserved.</p>
     </footer>
   </body>
