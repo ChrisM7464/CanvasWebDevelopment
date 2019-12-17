@@ -7,90 +7,130 @@
 <html lang="en">
   <head>
     <title>Low-Cal Calzone Zone Menu</title>
+	<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+	<style>
+		p {
+			text-align: left;
+			margin: 10px 0;
+			width: 25%;
+			display: block;
+		}
+		table {
+			margin: 5px;		
+			border: 1px solid #546a7b;
+			width: 50%;
+		}
+		table, th, td {
+			padding: 10px;	
+			text-align: left;
+		}
+		th {
+			background-color: #FFFBC6;
+		}
+		tr:nth-child(odd) {
+			background-color: #F3F9DD;
+		}
+	</style>
   </head>
   <body>
     <header>
-      <h1><center>The Low-Cal Calzone Zone</center></h1>
+      <h1>The Low-Cal Calzone Zone</h1>
     </header>
 	<nav>
-  <hr />
-  <a href="index.html">Home</a>
-  <a href="menu.html">Menu</a>
-  <a href="contact.html">Contact Us</a>
-  <hr />
-  </nav>
-  <section>
+		<a href="index.html">Home</a>
+		<a href="menu.html">Menu</a>
+		<a href="contact.html">Contact Us</a>
+	</nav>
+  <section id="entrees">
   <article id="calzone">
   <h3>Low-Cal Calzone</h3>
-  <p>Our Signature Low-Cal Calzone!<br>
-  Comes with your choice of filling:<br>
-  Ham, spinach, pepperoni or sausage<br>
-  $7.50 + $0.50 for each additional filling
-  </p>
+  <p>Our Signature Low-Cal Calzone!
+  Comes with your choice of filling:
+  Ham, spinach, pepperoni or sausage</p>
+  <p>$7.50 + $0.50 for each additional filling</p>
   </article>
   <article id="burger">
   <h3>Burger and Fries</h3>
-  <p>An American Classic!<br>
-  Your choice - with or without cheese <br>
-  Pickle, onion, tomato, and lettuce <br>
-  Served with our famous thick cut french fries <br>
-  $7.95
-  </p>
+  <p>An American Classic!
+  Your choice - with or without cheese 
+  Pickle, onion, tomato, and lettuce 
+  Served with our famous thick cut french fries</p>
+  <p>$7.95</p>
   </article>
   <article id="hot-dog">
   <h3>Hot Dog and Chips</h3>
-  <p>A Summer Classic! <br>
-  Your choice - white or wheat bun <br>
-  Relish, mustard, and ketchup <br>
-  Served with our house-made chips <br>
-  $7.95
-  </p>
+  <p>A Summer Classic! 
+  Your choice - white or wheat bun 
+  Relish, mustard, and ketchup 
+  Served with our house-made chips</p> 
+  <p>$7.95</p>
   </article>
   <article id="italian-snp">
   <h3>Italian Sausage and Peppers</h3>
-  <p>An All-Time Favorite! <br>
-  Your choice - mild or spicy Cole Slaw <br>
-  Served with garlic mashers <br>
-  $10.95
-  </p>
+  <p>An All-Time Favorite! 
+  Your choice - mild or spicy Cole Slaw 
+  Served with garlic mashers</p>
+  <p>$10.95</p>
   </article>
   <article id="Tenderloin-sandwich">
   <h3>Tenderloin Sandwich and Chips</h3>
-  <p>Really Hits the Spot! <br>
-  Plain or Sesame Seed Bun <br>
-  Pickle, onion, tomato and lettuce <br>
-  Served with our house-made chips <br>
-  $8.95
-  </p>
+  <p>Really Hits the Spot! 
+  Plain or Sesame Seed Bun 
+  Pickle, onion, tomato and lettuce 
+  Served with our house-made chips</p> 
+  <p>$8.95</p>
   </article>
   <article id="salad">
   <h3>House Salad</h3>
-  <p>On the Lighter Side<br>
-  Your choice - with or without cheese <br>
-  Iceberg lettuce, tomatoes, peppers <br>
-  Thousand Island or Ranch <br>
-  Dressing served with a dinner roll <br>
-  $6.95
-  </p>
+  <p>On the Lighter Side
+  Your choice - with or without cheese 
+  Iceberg lettuce, tomatoes, peppers 
+  Thousand Island or Ranch 
+  Dressing served with a dinner roll</p>
+  <p>$6.95</p>
   </article>
   <article id="brisket">
   <h3>Brisket Sandwich and Fries</h3>
-  <p>A Taste of Texas! <br>
-  Smoked Brisket on thick-cut <br>
-  Texas Toast <br>
-  Cole Slaw <br>
-  Served with our famous thick-cut french fries <br>
-  $7.95
-  </p>
+  <p>A Taste of Texas! 
+  Smoked Brisket on thick-cut 
+  Texas Toast 
+  Cole Slaw 
+  Served with our famous thick-cut french fries</p>
+  <p>$7.95</p>
   </article>
   </section>
+  
+  <section id="beverages">
+	<table>
+		<thead>
+			<tr>
+				<th>Beverages</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Root Beer</td>
+				<td>$3.00</td>
+			</tr>
+			<tr>
+				<td>Bottled Water</td>
+				<td>$1.25</td>
+			</tr>
+			<tr>
+				<td>Lemonade</td>
+				<td>$1.00</td>
+			</tr>
+			<tr>
+				<td>Iced Tea</td>
+				<td>$1.25</td>
+			</tr>
+		</tbody>
+	</table>
+  </section>
   <footer>
-	<hr />
 	<address>
-		<center>
-  1533 Sugarfoot Lane, Pawnee, Indiana 47906 <br>
-  765-412-3878
-			</center>
+  <p>1533 Sugarfoot Lane, Pawnee, Indiana 47906</p> 
+  <p>765-412-3878</p>
 		</address>
 	</footer>
   </body>

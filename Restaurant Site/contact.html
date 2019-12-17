@@ -7,31 +7,68 @@
 <html lang="en">
 	<head>
 		<title>Contact Us</title>
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<style>
+		label {
+			font-size: 1.1em;
+		}
+		input[type=text] {
+			border: 1px solid #546a7b;
+			width: 10%;
+			padding: 4px 4px;
+			margin: 12px 0;
+			box-sizing: border-box;
+			font-size 1.1em;
+		}
+		.required-input {
+			font-weight: bold;
+		}
+		select, textarea {
+			margin: 12px 0;
+			font-size: 1em;
+		}
+		input[type=submit] {
+			font-size: 1.2em;
+			background-color: #C8BDD3;
+			color: #000;
+			padding: 4px 8px;
+		}
+		input[type=submit]:hover {
+			background-color: #B7B2B7;
+		}
+		textarea {
+			width: 90%;
+			height: 200px;
+			padding: 12px 20px;
+			margin: 12px 0;
+			box-sizing: border-box;
+			border: 1px solid #546a7b;
+			border-radius: 3px;
+			background-color: #fff;
+			resize: none;
+		}
+		</style>
 	</head>
 	<body>
 		<header>
-			<h1>
-				<center>The Low-Cal Calzone Zone</center>
-			</h1>
+			<h1>The Low-Cal Calzone Zone</h1>
 		</header>
 		<nav>
-			<hr />
 			<a href="index.html">Home</a>
 			<a href="menu.html">Menu</a>
 			<a href="contact.html">Contact Us</a>
-			<hr />
 		</nav>
 		<section>
 			<form action="request-submitted.html" method="POST">
-				<label for="name">Name:</label>
+				<label for="name" class="required-input">Name:</label>
 				<input type="text" name="nameInput" required />
-				<br />
-				<label for="lastName">Email:</label>
+				<div class="clear-float"></div>
+				<label for="lastName" class="required-input">Email:</label>
 				<input type="text" name="emailInput" required />
-				<br />
-				<label for="phone">Phone:</label>
+				<div class="clear-float"></div>
+				<label for="phone" class="required-input">Phone:</label>
 				<input type="text" name="phone" required />
-				<br />
+				<div class="clear-float"></div>
 				<label for="inquiry">Reason for Inquiry:</label>
 				<select id="inquiry" name="inquiry">
 					<option value="catering" selected>Catering</option>
@@ -39,44 +76,42 @@
 					<option value="feedback">Feedback</option>
 					<option value="Other">Other</option>
 				</select>
-				<br />
+				<div class="clear-float"></div>
 				<label for="info">Additional information:</label>
-				<br />
+				<div class="clear-float"></div>
 				<textarea id="info" name="info"/>
-				<br />
+				</textarea>
+				<div class="clear-float"></div>
 				<label for="visited-restaurant">
-		Have you been to the restaurant? </label>
+					Have you been to the restaurant? </label>
 				<input type="radio" id="choice1" name="answer" value="no" checked>
 					<label for="choice1">No</label>
-					<input type="radio" id="choice2" name="answer" value="yes">
-						<label for="choice2">Yes</label>
-						<br />
-						<label for="contact">
-		Best days to contact you:</label>
-						<input type="checkbox" id="monday" name="day" value="monday">
-							<label for="monday">M</label>
-							<input type="checkbox" id="tuesday" name="day" value="tuesday">
-								<label for="tuesday">T</label>
-								<input type="checkbox" id="wednesday" name="day" value="wednesday">
-									<label for="wednesday">W</label>
-									<input type="checkbox" id="thursday" name="day" value="thursday">
-										<label for="thursday">Th</label>
-										<input type="checkbox" id="friday" name="day" value="friday">
-											<label for="friday">F</label>
-											<br>
-												<input type="submit" value="Send Request"/>
-												<br />
-											</form>
-										</section>
-										<footer>
-											<hr />
-											<address>
-												<center>
-  1533 Sugarfoot Lane, Pawnee, Indiana 47906 <br>
-  765-412-3878
-													</center>
-												</address>
-											</footer>
-										</body>
-									</html>
+				<input type="radio" id="choice2" name="answer" value="yes">
+					<label for="choice2">Yes</label>
+				<div class="clear-float"></div>
+				<label for="contact">
+					Best days to contact you:</label>
+				<input type="checkbox" id="monday" name="day" value="monday">
+					<label for="monday">M</label>
+				<input type="checkbox" id="tuesday" name="day" value="tuesday">
+					<label for="tuesday">T</label>
+				<input type="checkbox" id="wednesday" name="day" value="wednesday">
+					<label for="wednesday">W</label>
+				<input type="checkbox" id="thursday" name="day" value="thursday">
+					<label for="thursday">Th</label>
+				<input type="checkbox" id="friday" name="day" value="friday">
+					<label for="friday">F</label>
+				<div class="clear-float"></div>
+					<input type="submit" value="Send Request"/>
+				<div class="clear-float"></div>
+			</form>
+		</section>
+		<footer>
+			<address>
+				<p>1533 Sugarfoot Lane, Pawnee, Indiana 47906</p>
+				<p>765-412-3878</p>
+			</address>
+		</footer>
+	</body>
+</html>
 									
