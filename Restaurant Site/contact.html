@@ -2,16 +2,26 @@
 <!--
         Name: Christopher Modica
         Date Created: December 14th, 2019
-        Most recent revision:
+        Most recent revision: December 22nd, 2019
 -->
 <html lang="en">
 	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
 		<title>Contact Us</title>
+		
+		<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<!-- Link to font hosted externally by Google -->
+		<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+		
 		<style>
 		label {
 			font-size: 1.1em;
 		}
+		
 		input[type=text] {
 			border: 1px solid #546a7b;
 			width: 10%;
@@ -20,22 +30,27 @@
 			box-sizing: border-box;
 			font-size 1.1em;
 		}
+		
 		.required-input {
 			font-weight: bold;
 		}
+		
 		select, textarea {
 			margin: 12px 0;
 			font-size: 1em;
 		}
+		
 		input[type=submit] {
 			font-size: 1.2em;
 			background-color: #C8BDD3;
 			color: #000;
 			padding: 4px 8px;
 		}
+		
 		input[type=submit]:hover {
 			background-color: #B7B2B7;
 		}
+		
 		textarea {
 			width: 90%;
 			height: 200px;
@@ -50,6 +65,7 @@
 		</style>
 	</head>
 	<body>
+	<div class="container">
 		<header>
 			<h1>The Low-Cal Calzone Zone</h1>
 		</header>
@@ -107,11 +123,15 @@
 			</form>
 		</section>
 		<footer>
-			<address>
-				<p>1533 Sugarfoot Lane, Pawnee, Indiana 47906</p>
-				<p>765-412-3878</p>
-			</address>
+			<div class="row justify-content-center" id="address">
+				1533 Sugarfoot Lane, Pawnee, Indiana 47906 <br />
+				765-412-3878
+			</div>
 		</footer>
+	</div> <!-- Bottom of .container div-->
+		
+		<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	</body>
 </html>
 									

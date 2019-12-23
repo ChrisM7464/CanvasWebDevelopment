@@ -2,58 +2,68 @@
 <!--
         Name: Christopher Modica
         Date Created: December 14th, 2019
-        Most recent revision:
+        Most recent revision: 
 -->
+
 <html lang="en">
 	<head>
-		<title>Low-cal Calzone Zone Home Page</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<title>Low-Cal Calzone Zone Home Page</title>
+		
+		<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
 		<!-- Link to font hosted externally by Google -->
 		<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+		<!-- Link to icons hosted externally by FontAwesome -->		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		
 		<style>
-			.main-image {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-				width: 400px;
-				height: 150px;
-			}
-			header {
-				font-family: 'Righteous', cursive;
-			}
-			p {
-				text-align: center;
-				margin: 10px auto;
-				width: 50%;
-				display: block;
-			}
-		</style
+		
+		</style>
 	</head>
 	<body>
-		<header>
+	<div class="container">
+		<header class="jumbotron">
 			<h1>The Low-Cal Calzone Zone</h1>
 		</header>
-		<nav>
-			<a href="index.html">Home</a>
-			<a href="menu.html">Menu</a>
-			<a href="contact.html">Contact Us</a>
+
+		<nav class="navbar navbar-expand-sm bg-light">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="btn badge-pill" href="index.html"><i class="fas fa-home"></i></a></li>
+				<li class="nav-item"><a class="btn badge-pill" href="menu.html">Menu</a></li>
+				<li class="nav-item"><a class="btn badge-pill" href="contact.html">Contact Us</a></li>
+			</ul>
 		</nav>
 		<section>
-			<article id="restaurant-description">
-				<img src="images/calzone.jpg" alt="Image of a loc-cal calzone" class="main-image" />
-				<p>"Pizza? Never heard of it!" That's what you'll be saying after you try one of our 
+			
+			<div class="row justify-content-center" id="image-row">
+				<img src="images/calzone.jpg" alt="Image of a loc-cal calzone" class="img=fluid" />
+			</div>
+			<div class="row justify-content-center" id="restaurant-description">
+				<div class="col-8">
+				"Pizza? Never heard of it!" That's what you'll be saying after you try one of our 
 				outstanding, low-cal calzones. A portable, delicious meal that is its own container made
 				using only low fat ingredients. It's a whole new spin on Italian fast casual dining! So 
 				come on down to the Low-Cal Calzone Zone and let us prove to you that pizza is your 
-				grandfather's calzone.</p>
-			</article>
+				grandfather's calzone.
+				</div>
+			</div>  <!-- End of second .row div -->
 		</section>
 		<footer>
-			<address>
-			<p>1533 Sugarfoot Lane, Pawnee, Indiana 47906</p>
-			<p>765-412-3878</p>
-			</address>
-			</footer>
-			</body>
-			</html>
+			<div class="row justify-content-center" id="address">
+				1533 Sugarfoot Lane, Pawnee, Indiana 47906 <br />
+				765-412-3878
+			</div>
+		</footer>
+	</div> <!-- Bottom of .container div-->
+		
+		<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
+</html>
 				

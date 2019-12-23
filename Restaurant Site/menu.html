@@ -2,136 +2,161 @@
 <!--
         Name: Christopher Modica
         Date Created: December 14th, 2019
-        Most recent revision:
+        Most recent revision: December 22nd, 2019
 -->
 <html lang="en">
-  <head>
-    <title>Low-Cal Calzone Zone Menu</title>
-	<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
-	<style>
-		p {
-			text-align: left;
-			margin: 10px 0;
-			width: 25%;
-			display: block;
-		}
-		table {
-			margin: 5px;		
-			border: 1px solid #546a7b;
-			width: 50%;
-		}
-		table, th, td {
-			padding: 10px;	
-			text-align: left;
-		}
-		th {
-			background-color: #FFFBC6;
-		}
-		tr:nth-child(odd) {
-			background-color: #F3F9DD;
-		}
-	</style>
-  </head>
-  <body>
-    <header>
-      <h1>The Low-Cal Calzone Zone</h1>
-    </header>
-	<nav>
-		<a href="index.html">Home</a>
-		<a href="menu.html">Menu</a>
-		<a href="contact.html">Contact Us</a>
-	</nav>
-  <section id="entrees">
-  <article id="calzone">
-  <h3>Low-Cal Calzone</h3>
-  <p>Our Signature Low-Cal Calzone!
-  Comes with your choice of filling:
-  Ham, spinach, pepperoni or sausage</p>
-  <p>$7.50 + $0.50 for each additional filling</p>
-  </article>
-  <article id="burger">
-  <h3>Burger and Fries</h3>
-  <p>An American Classic!
-  Your choice - with or without cheese 
-  Pickle, onion, tomato, and lettuce 
-  Served with our famous thick cut french fries</p>
-  <p>$7.95</p>
-  </article>
-  <article id="hot-dog">
-  <h3>Hot Dog and Chips</h3>
-  <p>A Summer Classic! 
-  Your choice - white or wheat bun 
-  Relish, mustard, and ketchup 
-  Served with our house-made chips</p> 
-  <p>$7.95</p>
-  </article>
-  <article id="italian-snp">
-  <h3>Italian Sausage and Peppers</h3>
-  <p>An All-Time Favorite! 
-  Your choice - mild or spicy Cole Slaw 
-  Served with garlic mashers</p>
-  <p>$10.95</p>
-  </article>
-  <article id="Tenderloin-sandwich">
-  <h3>Tenderloin Sandwich and Chips</h3>
-  <p>Really Hits the Spot! 
-  Plain or Sesame Seed Bun 
-  Pickle, onion, tomato and lettuce 
-  Served with our house-made chips</p> 
-  <p>$8.95</p>
-  </article>
-  <article id="salad">
-  <h3>House Salad</h3>
-  <p>On the Lighter Side
-  Your choice - with or without cheese 
-  Iceberg lettuce, tomatoes, peppers 
-  Thousand Island or Ranch 
-  Dressing served with a dinner roll</p>
-  <p>$6.95</p>
-  </article>
-  <article id="brisket">
-  <h3>Brisket Sandwich and Fries</h3>
-  <p>A Taste of Texas! 
-  Smoked Brisket on thick-cut 
-  Texas Toast 
-  Cole Slaw 
-  Served with our famous thick-cut french fries</p>
-  <p>$7.95</p>
-  </article>
-  </section>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<title>Low-Cal Calzone Zone Menu</title>
+	
+		<!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<!-- Link to font hosted externally by Google -->
+		<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+		
+		<style>
+			p {
+				text-align: left;
+				margin: 10px 0;
+				width: 25%;
+				display: block;
+			}
+			
+			table {
+				margin: 5px;		
+				border: 1px solid #546a7b;
+				width: 50%;
+			}
+			
+			table, th, td {
+				padding: 10px;	
+				text-align: left;
+			}
+			
+			th {
+				background-color: #FFFBC6;
+			}
+			
+			tr:nth-child(odd) {
+				background-color: #F3F9DD;
+			}
+		</style>
+	</head>
+	<body>
+	<div class="container">
+		<header>
+			<h1>The Low-Cal Calzone Zone</h1>
+		</header>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="contact.html">Contact Us</a>
+		</nav>
+		<section id="entrees">
+			<article id="calzone">
+				<h3>Low-Cal Calzone</h3>
+				<p>Our Signature Low-Cal Calzone!
+				Comes with your choice of filling:
+				Ham, spinach, pepperoni or sausage</p>
+				<p>$7.50 + $0.50 for each additional filling</p>
+			</article>
+			
+			<article id="burger">
+				<h3>Burger and Fries</h3>
+				<p>An American Classic!
+				Your choice - with or without cheese 
+				Pickle, onion, tomato, and lettuce 
+				Served with our famous thick cut french fries</p>
+				<p>$7.95</p>
+			</article>
+			
+			<article id="hot-dog">
+				<h3>Hot Dog and Chips</h3>
+				<p>A Summer Classic! 
+				Your choice - white or wheat bun 
+				Relish, mustard, and ketchup 
+				Served with our house-made chips</p> 
+				<p>$7.95</p>
+			</article>
+			
+			<article id="italian-snp">
+				<h3>Italian Sausage and Peppers</h3>
+				<p>An All-Time Favorite! 
+				Your choice - mild or spicy Cole Slaw 
+				Served with garlic mashers</p>
+				<p>$10.95</p>
+			</article>
+			
+			<article id="Tenderloin-sandwich">
+				<h3>Tenderloin Sandwich and Chips</h3>
+				<p>Really Hits the Spot! 
+				Plain or Sesame Seed Bun 
+				Pickle, onion, tomato and lettuce 
+				Served with our house-made chips</p> 
+				<p>$8.95</p>
+			</article>
+			
+			<article id="salad">
+				<h3>House Salad</h3>
+				<p>On the Lighter Side
+				Your choice - with or without cheese 
+				Iceberg lettuce, tomatoes, peppers 
+				Thousand Island or Ranch 
+				Dressing served with a dinner roll</p>
+				<p>$6.95</p>
+			</article>
+			
+			<article id="brisket">
+				<h3>Brisket Sandwich and Fries</h3>
+				<p>A Taste of Texas! 
+				Smoked Brisket on thick-cut 
+				Texas Toast 
+				Cole Slaw 
+				Served with our famous thick-cut french fries</p>
+				<p>$7.95</p>
+			</article>
+		</section>
   
-  <section id="beverages">
-	<table>
-		<thead>
-			<tr>
-				<th>Beverages</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Root Beer</td>
-				<td>$3.00</td>
-			</tr>
-			<tr>
-				<td>Bottled Water</td>
-				<td>$1.25</td>
-			</tr>
-			<tr>
-				<td>Lemonade</td>
-				<td>$1.00</td>
-			</tr>
-			<tr>
-				<td>Iced Tea</td>
-				<td>$1.25</td>
-			</tr>
-		</tbody>
-	</table>
-  </section>
-  <footer>
-	<address>
-  <p>1533 Sugarfoot Lane, Pawnee, Indiana 47906</p> 
-  <p>765-412-3878</p>
-		</address>
-	</footer>
-  </body>
+		<section id="beverages">
+			<table>
+				<thead>
+					<tr>
+						<th>Beverages</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Root Beer</td>
+						<td>$3.00</td>
+					</tr>
+					<tr>
+						<td>Bottled Water</td>
+						<td>$1.25</td>
+					</tr>
+					<tr>
+						<td>Lemonade</td>
+						<td>$1.00</td>
+					</tr>
+					<tr>
+						<td>Iced Tea</td>
+						<td>$1.25</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		
+		<footer>
+			<div class="row justify-content-center" id="address">
+				1533 Sugarfoot Lane, Pawnee, Indiana 47906 <br />
+				765-412-3878
+			</div>
+		</footer>
+	</div> <!-- Bottom of .container div-->
+	
+		<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	</body>
 </html>
