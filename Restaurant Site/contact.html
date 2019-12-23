@@ -2,7 +2,7 @@
 <!--
         Name: Christopher Modica
         Date Created: December 14th, 2019
-        Most recent revision: December 22nd, 2019
+        Most recent revision: December 23rd, 2019
 -->
 <html lang="en">
 	<head>
@@ -16,25 +16,10 @@
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
 		<!-- Link to font hosted externally by Google -->
 		<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+		<!-- Link to icons hosted externally by FontAwesome -->		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 		
 		<style>
-		label {
-			font-size: 1.1em;
-		}
-		
-		input[type=text] {
-			border: 1px solid #546a7b;
-			width: 10%;
-			padding: 4px 4px;
-			margin: 12px 0;
-			box-sizing: border-box;
-			font-size 1.1em;
-		}
-		
-		.required-input {
-			font-weight: bold;
-		}
-		
 		select, textarea {
 			margin: 12px 0;
 			font-size: 1em;
@@ -66,46 +51,74 @@
 	</head>
 	<body>
 	<div class="container">
-		<header>
+		<header class="jumbotron">
 			<h1>The Low-Cal Calzone Zone</h1>
 		</header>
-		<nav>
-			<a href="index.html">Home</a>
-			<a href="menu.html">Menu</a>
-			<a href="contact.html">Contact Us</a>
+		
+		<nav class="navbar navbar-expand-sm bg-light">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="btn badge-pill" href="index.html"><i class="fas fa-home"></i></a></li>
+				<li class="nav-item"><a class="btn badge-pill" href="menu.html">Menu</a></li>
+				<li class="nav-item"><a class="btn badge-pill" href="contact.html">Contact Us</a></li>
+			</ul>
 		</nav>
-		<section>
-			<form action="request-submitted.html" method="POST">
-				<label for="name" class="required-input">Name:</label>
-				<input type="text" name="nameInput" required />
-				<div class="clear-float"></div>
-				<label for="lastName" class="required-input">Email:</label>
-				<input type="text" name="emailInput" required />
-				<div class="clear-float"></div>
-				<label for="phone" class="required-input">Phone:</label>
-				<input type="text" name="phone" required />
-				<div class="clear-float"></div>
-				<label for="inquiry">Reason for Inquiry:</label>
-				<select id="inquiry" name="inquiry">
-					<option value="catering" selected>Catering</option>
-					<option value="private">Private Party</option>
-					<option value="feedback">Feedback</option>
-					<option value="Other">Other</option>
-				</select>
-				<div class="clear-float"></div>
-				<label for="info">Additional information:</label>
-				<div class="clear-float"></div>
-				<textarea id="info" name="info"/>
-				</textarea>
-				<div class="clear-float"></div>
-				<label for="visited-restaurant">
+		
+		<form name="contactForm" onsubmit="return validateInfo();">
+			<div class="form-group row">
+				<label for="nameInput" class="col-auto col-form-label font-weight-bold">Name:</label>
+				<div class="col-auto">
+					<input type="text" class="form-control" id="nameInput" placeholder="Enter name here">
+				</div>
+			</div>
+			
+			<div class="form-group row">
+				<label for="emailInput" class="col-auto col-form-label font-weight-bold">Email:</label>
+				<div class="col-auto">
+					<input type="email" class="form-control" name="emailInput" placeholder="name@example.com">
+				</div>
+			</div>
+			
+			<div class="form-group row">
+				<label for="phone" class="col-auto col-form-label font-weight-bold">Phone:</label>
+				<div class="col-auto">
+					<input type="tel" class="form-control" name="phone" placeholder="1-(555)-555-5555">
+				</div>
+			</div>
+			
+			<div class="form-group row">
+				<label for="inquiry" class="col-auto col-form-label">Reason for Inquiry:</label>
+				<div class="col-auto">
+					<select id="inquiry" class="form-control" name="inquiry">
+						<option value="catering" selected>Catering</option>
+						<option value="private">Private Party</option>
+						<option value="feedback">Feedback</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+			</div>
+			
+			
+			<!-- TODO: Form controls below this point; JS input validation -->
+			<div class="form-group row">
+				<label for="info" class="col-auto col-form-label">Additional information:</label>
+				<div class="col-auto">
+					<textarea id="info" name="info"/></textarea>
+				</div>
+			</div>
+			
+			<div class="form-group row">
+				<label for="visited-restaurant" class="col-auto col-form-label">
 					Have you been to the restaurant? </label>
+				<div class="col-auto">
 				<input type="radio" id="choice1" name="answer" value="no" checked>
 					<label for="choice1">No</label>
 				<input type="radio" id="choice2" name="answer" value="yes">
 					<label for="choice2">Yes</label>
-				<div class="clear-float"></div>
-				<label for="contact">
+				</div>
+			</div>
+			
+			<div class="form-group row">
+				<label for="contact" class="font-weight-bold">
 					Best days to contact you:</label>
 				<input type="checkbox" id="monday" name="day" value="monday">
 					<label for="monday">M</label>
@@ -117,11 +130,12 @@
 					<label for="thursday">Th</label>
 				<input type="checkbox" id="friday" name="day" value="friday">
 					<label for="friday">F</label>
-				<div class="clear-float"></div>
-					<input type="submit" value="Send Request"/>
-				<div class="clear-float"></div>
-			</form>
-		</section>
+			</div>
+			
+			<input type="submit" value="Send Request"/>
+			<div class="clear-float"></div>
+		</form>
+		
 		<footer>
 			<div class="row justify-content-center" id="address">
 				1533 Sugarfoot Lane, Pawnee, Indiana 47906 <br />

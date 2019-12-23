@@ -16,115 +16,107 @@
 		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
 		<!-- Link to font hosted externally by Google -->
 		<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+		<!-- Link to icons hosted externally by FontAwesome -->		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 		
-		<style>
+		<style>	
 			p {
-				text-align: left;
-				margin: 10px 0;
-				width: 25%;
-				display: block;
+				margin-bottom: 0px;
+				text-align: center;
 			}
 			
-			table {
-				margin: 5px;		
-				border: 1px solid #546a7b;
-				width: 50%;
-			}
-			
-			table, th, td {
-				padding: 10px;	
-				text-align: left;
-			}
-			
-			th {
-				background-color: #FFFBC6;
-			}
-			
-			tr:nth-child(odd) {
-				background-color: #F3F9DD;
-			}
 		</style>
 	</head>
 	<body>
 	<div class="container">
-		<header>
+		<header class="jumbotron">
 			<h1>The Low-Cal Calzone Zone</h1>
 		</header>
-		<nav>
-			<a href="index.html">Home</a>
-			<a href="menu.html">Menu</a>
-			<a href="contact.html">Contact Us</a>
+		
+		<nav class="navbar navbar-expand-sm bg-light">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="btn badge-pill" href="index.html"><i class="fas fa-home"></i></a></li>
+				<li class="nav-item"><a class="btn badge-pill" href="menu.html">Menu</a></li>
+				<li class="nav-item"><a class="btn badge-pill" href="contact.html">Contact Us</a></li>
+			</ul>
 		</nav>
+		
 		<section id="entrees">
-			<article id="calzone">
-				<h3>Low-Cal Calzone</h3>
-				<p>Our Signature Low-Cal Calzone!
-				Comes with your choice of filling:
-				Ham, spinach, pepperoni or sausage</p>
-				<p>$7.50 + $0.50 for each additional filling</p>
-			</article>
+			<div class="row">
+				<div class="col- col-lg-4 col-md-6 col-sm-12" id="calzone">
+					<h4 class="text-center">Low-Cal Calzone</h4>
+					<p>Our Signature Low-Cal Calzone!</p>
+					<p>Comes with your choice of filling:
+					Ham, spinach, pepperoni or sausage</p>
+					<p>$7.50 + $0.50 for each additional filling</p>
+				</div>
+				
+				<div class="col- col-lg-4 col-md-6 col-sm-12" id="burger">
+					<h4 class="text-center">Burger and Fries</h4>
+					<p>An American Classic!</p>
+					<p>Your choice - with or without cheese</p> 
+					<p>Pickle, onion, tomato, and lettuce</p> 
+					<p>Served with our famous thick cut french fries</p>
+					<p>$7.95</p>
+				</div>
+				
+				<div class="col- col-lg-4 col-md-6 col-sm-12" id="hot-dog">
+					<h4 class="text-center">Hot Dog and Chips</h4>
+					<p>A Summer Classic!</p> 
+					<p>Your choice - white or wheat bun</p>
+					<p>Relish, mustard, and ketchup.</p> 
+					<p>Served with our house-made chips</p>
+					<p>$7.95</p>
+				</div>
+			</div> <!-- End of first .row div -->
 			
-			<article id="burger">
-				<h3>Burger and Fries</h3>
-				<p>An American Classic!
-				Your choice - with or without cheese 
-				Pickle, onion, tomato, and lettuce 
-				Served with our famous thick cut french fries</p>
-				<p>$7.95</p>
-			</article>
+			<div class="row">
+				<div class="col- col-lg-4 col-md-6 col-sm-12" id="italian-snp">
+					<h4 class="text-center">Italian Sausage and Peppers</h4>
+					<p>An All-Time Favorite!</p>
+					<p>Your choice - mild or spicy Cole Slaw</p> 
+					<p>Served with garlic mashers</p>
+					<p>$10.95</p>
+				</div>
+				
+				<div class="col- col-lg-4 col-md-6 col-sm-12" id="Tenderloin-sandwich">
+					<h4 class="text-center">Tenderloin Sandwich and Chips</h4>
+					<p>Really Hits the Spot!</p> 
+					<p>Plain or Sesame Seed Bun</p> 
+					<p>Pickle, onion, tomato and lettuce</p> 
+					<p>Served with our house-made chips</p> 
+					<p>$8.95</p>
+				</div>
+				
+				<div class="col- col-lg-4 col-md-6 col-sm-12" id="salad">
+					<h4 class="text-center">House Salad</h4>
+					<p>On the Lighter Side</p>
+					<p>Your choice - with or without cheese</p> 
+					<p>Iceberg lettuce, tomatoes, peppers</p> 
+					<p>Thousand Island or Ranch</p> 
+					<p>Dressing served with a dinner roll</p>
+					<p>$6.95</p>
+				</div>
+			</div> <!-- End of second .row div -->
 			
-			<article id="hot-dog">
-				<h3>Hot Dog and Chips</h3>
-				<p>A Summer Classic! 
-				Your choice - white or wheat bun 
-				Relish, mustard, and ketchup 
-				Served with our house-made chips</p> 
-				<p>$7.95</p>
-			</article>
-			
-			<article id="italian-snp">
-				<h3>Italian Sausage and Peppers</h3>
-				<p>An All-Time Favorite! 
-				Your choice - mild or spicy Cole Slaw 
-				Served with garlic mashers</p>
-				<p>$10.95</p>
-			</article>
-			
-			<article id="Tenderloin-sandwich">
-				<h3>Tenderloin Sandwich and Chips</h3>
-				<p>Really Hits the Spot! 
-				Plain or Sesame Seed Bun 
-				Pickle, onion, tomato and lettuce 
-				Served with our house-made chips</p> 
-				<p>$8.95</p>
-			</article>
-			
-			<article id="salad">
-				<h3>House Salad</h3>
-				<p>On the Lighter Side
-				Your choice - with or without cheese 
-				Iceberg lettuce, tomatoes, peppers 
-				Thousand Island or Ranch 
-				Dressing served with a dinner roll</p>
-				<p>$6.95</p>
-			</article>
-			
-			<article id="brisket">
-				<h3>Brisket Sandwich and Fries</h3>
-				<p>A Taste of Texas! 
-				Smoked Brisket on thick-cut 
-				Texas Toast 
-				Cole Slaw 
-				Served with our famous thick-cut french fries</p>
-				<p>$7.95</p>
-			</article>
+			<div class="row">
+				<div class="col- col-lg-4 col-md-6 col-sm-12" id="brisket">
+					<h4 class="text-center">Brisket Sandwich and Fries</h4>
+					<p>A Taste of Texas!</p> 
+					<p>Smoked Brisket on thick-cut</p>
+					<p>Texas Toast</p>
+					<p>Cole Slaw</p>
+					<p>Served with our famous thick-cut french fries</p>
+					<p>$7.95</p>
+				</div>
+			</div> <!-- End of third .row div -->
 		</section>
-  
+		
 		<section id="beverages">
-			<table>
+			<table class="table table-bordered table-striped">
 				<thead>
 					<tr>
-						<th>Beverages</th>
+						<th scope="col">Beverages</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -154,6 +146,7 @@
 				765-412-3878
 			</div>
 		</footer>
+		
 	</div> <!-- Bottom of .container div-->
 	
 		<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
