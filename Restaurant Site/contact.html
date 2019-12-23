@@ -20,39 +20,17 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 		
 		<style>
-		select, textarea {
-			margin: 12px 0;
-			font-size: 1em;
-		}
-		
-		input[type=submit] {
-			font-size: 1.2em;
-			background-color: #C8BDD3;
-			color: #000;
-			padding: 4px 8px;
-		}
-		
-		input[type=submit]:hover {
-			background-color: #B7B2B7;
-		}
-		
-		textarea {
-			width: 90%;
-			height: 200px;
-			padding: 12px 20px;
-			margin: 12px 0;
-			box-sizing: border-box;
-			border: 1px solid #546a7b;
-			border-radius: 3px;
-			background-color: #fff;
-			resize: none;
+		#submitButton {
+		margin-bottom: 10px;
 		}
 		</style>
+		
 	</head>
 	<body>
 	<div class="container">
 		<header class="jumbotron">
 			<h1>The Low-Cal Calzone Zone</h1>
+			<h5 class="font-italic text-right mb-auto">New location opening in early 2020!</h4>
 		</header>
 		
 		<nav class="navbar navbar-expand-sm bg-light">
@@ -63,25 +41,30 @@
 			</ul>
 		</nav>
 		
+		<noscript>
+            For full functionality of this site it is necessary to enable JavaScript.
+            Here are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript in your web browser</a>.
+        </noscript>
+		
 		<form name="contactForm" onsubmit="return validateInfo();">
 			<div class="form-group row">
 				<label for="nameInput" class="col-auto col-form-label font-weight-bold">Name:</label>
 				<div class="col-auto">
-					<input type="text" class="form-control" id="nameInput" placeholder="Enter name here">
+					<input type="text" class="form-control" id="nameInput" value="" placeholder="Enter name here">
 				</div>
 			</div>
 			
 			<div class="form-group row">
 				<label for="emailInput" class="col-auto col-form-label font-weight-bold">Email:</label>
 				<div class="col-auto">
-					<input type="email" class="form-control" name="emailInput" placeholder="name@example.com">
+					<input type="email" class="form-control" id="emailInput" value="" placeholder="name@example.com">
 				</div>
 			</div>
 			
 			<div class="form-group row">
 				<label for="phone" class="col-auto col-form-label font-weight-bold">Phone:</label>
 				<div class="col-auto">
-					<input type="tel" class="form-control" name="phone" placeholder="1-(555)-555-5555">
+					<input type="tel" class="form-control" id="phone" placeholder="1-(555)-555-5555">
 				</div>
 			</div>
 			
@@ -97,43 +80,52 @@
 				</div>
 			</div>
 			
-			
-			<!-- TODO: Form controls below this point; JS input validation -->
 			<div class="form-group row">
 				<label for="info" class="col-auto col-form-label">Additional information:</label>
 				<div class="col-auto">
-					<textarea id="info" name="info"/></textarea>
+					<textarea id="info" class="form-control" name="info" rows="3"/></textarea>
 				</div>
 			</div>
 			
 			<div class="form-group row">
 				<label for="visited-restaurant" class="col-auto col-form-label">
 					Have you been to the restaurant? </label>
-				<div class="col-auto">
-				<input type="radio" id="choice1" name="answer" value="no" checked>
-					<label for="choice1">No</label>
-				<input type="radio" id="choice2" name="answer" value="yes">
-					<label for="choice2">Yes</label>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="visitedAnswer" id="choice1" value="no" checked>
+					<label class="form-check-label" for="choice1">No</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="visitedAnswer" id="choice2" value="yes">
+					<label class="form-check-label" for="choice2">Yes</label>
 				</div>
 			</div>
 			
 			<div class="form-group row">
-				<label for="contact" class="font-weight-bold">
+				<label for="contact" class="col-auto col-form-label font-weight-bold">
 					Best days to contact you:</label>
-				<input type="checkbox" id="monday" name="day" value="monday">
-					<label for="monday">M</label>
-				<input type="checkbox" id="tuesday" name="day" value="tuesday">
-					<label for="tuesday">T</label>
-				<input type="checkbox" id="wednesday" name="day" value="wednesday">
-					<label for="wednesday">W</label>
-				<input type="checkbox" id="thursday" name="day" value="thursday">
-					<label for="thursday">Th</label>
-				<input type="checkbox" id="friday" name="day" value="friday">
-					<label for="friday">F</label>
-			</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="monday" name="days" value="Monday">
+					<label class="form-check-label" for="monday">M</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="tuesday" name="days" value="tuesday">
+					<label class="form-check-label" for="tuesday">T</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="wednesday" name="days" value="wednesday">
+					<label class="form-check-label" for="wednesday">W</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="thursday" name="days" value="thursday">
+					<label class="form-check-label" for="thursday">Th</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="friday" name="days" value="friday">
+					<label class="form-check-label" for="friday">F</label>
+				</div>
+			</div> <!-- End of checkbox .form-group div -->
 			
-			<input type="submit" value="Send Request"/>
-			<div class="clear-float"></div>
+			<button type="submit" class="btn btn-primary" id="submitButton">Send Request</button>
 		</form>
 		
 		<footer>
@@ -146,6 +138,7 @@
 		
 		<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script> <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+		<script type="text/JavaScript" src="scripts/contact.js"></script>
 	</body>
 </html>
 									
